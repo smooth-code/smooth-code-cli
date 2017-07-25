@@ -1,0 +1,22 @@
+{
+  "name": "smooth-code-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "smooth-code": "./bin/smooth-code"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel -d lib src"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "mz": "^2.6.0",
+    "opn": "^5.1.0"
+  }
+}
