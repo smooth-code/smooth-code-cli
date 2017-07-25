@@ -2,6 +2,12 @@
 
 Smooth code utility for training exercises.
 
+## Install
+
+```
+npm install -g smooth-code-cli
+```
+
 ## Usage
 
 ```
