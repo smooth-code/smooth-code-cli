@@ -6,7 +6,7 @@ export default program =>
     .description('Go to the beginning of an exercise')
     .action(async (exercise, options) => {
       console.log('Stashing changes...')
-      await exec(`git stash save "start exercise ${exercise}"`)
+      await exec(`git stash -u`)
       console.log(`Going to the start of exercise ${exercise}`)
       await exec(`git checkout start-exercise-${exercise}`)
       console.log(`Installing dependencies...`)
