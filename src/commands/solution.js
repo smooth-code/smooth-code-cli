@@ -1,5 +1,5 @@
 import { exec } from 'mz/child_process'
-import opn from 'opn'
+import open from 'open'
 
 async function getProjectUrl() {
   const remoteStr = String(await exec('git remote -v'))
@@ -13,7 +13,7 @@ export default program =>
     .description('Get the solution of an exercise')
     .action(async (exercise, options) => {
       const projectUrl = await getProjectUrl()
-      opn(
+      open(
         `${projectUrl}/compare/start-exercise-${exercise}...end-exercise-${exercise}`,
         { wait: false },
       )

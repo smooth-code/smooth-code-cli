@@ -1,5 +1,4 @@
 import program from 'commander'
-import { exec } from 'mz/child_process'
 import pkg from '../package.json'
 import tag from './commands/tag'
 import start from './commands/start'
